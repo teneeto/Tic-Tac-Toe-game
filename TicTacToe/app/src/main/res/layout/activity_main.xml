@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eto.tictactoe.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIC-TAC-TOE"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by Olei Eto"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiPlayerButton"
+            android:text="Multi Player"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/but_des"
+            android:textColor="@color/white"
+            android:onClick="loadLevelSelection"
+            android:layout_marginBottom="@dimen/button_magin_bottom"/>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:id="@+id/aboutButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/but_des"
+            android:textColor="@color/white"
+            android:onClick="loadAboutPage"
+            android:layout_marginBottom="@dimen/button_magin_bottom"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
